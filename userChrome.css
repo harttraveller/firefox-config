@@ -1,28 +1,23 @@
-@media (prefers-color-scheme: dark) {
-
-    #navigator-toolbox,
-    #sidebar-box,
-    #tabbrowser-tabbox,
-    #tabbrowser-tabpanels,
-    #browser,
-    #appcontent,
-    #sidebar-select-box,
-    .browser-sidebar2,
-    tab.tabbrowser-tab * {
-        background-color: #1C1B21 !important;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    #navigator-toolbox {
-        background: #1C1B21 !important;
-    }
+#navigator-toolbox,
+#sidebar-box,
+#tabbrowser-tabbox,
+#tabbrowser-tabpanels,
+#browser,
+#appcontent,
+#sidebar-select-box,
+#navigator-toolbox .browser-sidebar2,
+tab.tabbrowser-tab * {
+    background-color: #1C1B21 !important;
 }
 
 #navigator-toolbox {
     border-bottom: var(--firefoxcss-top-bar-border-bottom-size) solid var(--firefoxcss-top-bar-border-bottom-color) !important;
 }
 
+/* hide bookmark button */
+/* #star-button-box {
+    display: none !important;
+} */
 
 #alltabs-button,
 #tabs-newtab-button {
@@ -44,15 +39,26 @@
     background-color: #1C1B21 !important;
 }
 
+#urlbar-background {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 
 #urlbar-container {
     flex: 1;
     margin-top: -0.20rem !important;
-    max-width: none;
+    max-width: 600px;
     min-width: 200px;
-    margin-left: 4rem !important;
+    left: -0.8rem !important;
+    margin-left: auto !important;
     margin-right: auto !important;
 }
+
+#urlbar:not([focused]) #urlbar-input {
+    text-align: center !important;
+}
+
 
 #urlbar-background,
 #urlbar-input-container {
@@ -63,17 +69,21 @@
     --urlbar-icon-border-radius: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
-    #urlbar-background {
-        background-color: #1C1B21 !important;
-    }
+/* Remove "This time search with:..." */
+#urlbar .search-one-offs {
+    display: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
-    #urlbar-results>*[selected=""] {
-        background-color: #2b3b71 !important;
-    }
+
+#urlbar-background {
+    background-color: #1C1B21 !important;
 }
+
+#urlbar-results>*[selected=""] {
+    background-color: #2b3b71 !important;
+}
+
+
 
 #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] {
     --sidebar-width: 29px;

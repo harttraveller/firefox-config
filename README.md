@@ -11,3 +11,4 @@
 ## references
 
 - https://github.com/Shina-SG/Shina-Fox
+- https://github.com/mimipile/firefoxCSS
