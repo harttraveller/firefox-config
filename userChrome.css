@@ -1,0 +1,128 @@
+@media (prefers-color-scheme: dark) {
+
+    #navigator-toolbox,
+    #sidebar-box,
+    #tabbrowser-tabbox,
+    #tabbrowser-tabpanels,
+    #browser,
+    #appcontent,
+    #sidebar-select-box,
+    .browser-sidebar2,
+    tab.tabbrowser-tab * {
+        background-color: #1C1B21 !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #navigator-toolbox {
+        background: #1C1B21 !important;
+    }
+}
+
+#navigator-toolbox {
+    border-bottom: var(--firefoxcss-top-bar-border-bottom-size) solid var(--firefoxcss-top-bar-border-bottom-color) !important;
+}
+
+
+#alltabs-button,
+#tabs-newtab-button {
+    display: none !important;
+}
+
+
+#navigator-toolbox:not([inFullscreen]) #TabsToolbar .titlebar-buttonbox-container {
+    display: none !important
+}
+
+
+#TabsToolbar {
+    visibility: collapse;
+}
+
+#nav-bar {
+    padding-top: 0.5rem !important;
+    background-color: #1C1B21 !important;
+}
+
+
+#urlbar-container {
+    flex: 1;
+    margin-top: -0.20rem !important;
+    max-width: none;
+    min-width: 200px;
+    margin-left: 4rem !important;
+    margin-right: auto !important;
+}
+
+#urlbar-background,
+#urlbar-input-container {
+    --toolbarbutton-border-radius: 8px;
+}
+
+#urlbar-input-container {
+    --urlbar-icon-border-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    #urlbar-background {
+        background-color: #1C1B21 !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #urlbar-results>*[selected=""] {
+        background-color: #2b3b71 !important;
+    }
+}
+
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] {
+    --sidebar-width: 29px;
+    --sidebar-hover-width: 512px;
+    position: relative;
+    min-width: var(--sidebar-width) !important;
+    width: var(--sidebar-width) !important;
+    max-width: var(--sidebar-width) !important;
+    z-index: 1;
+    left: 2px !important;
+}
+
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]>#sidebar {
+    transition: min-width 150ms ease !important;
+    min-width: var(--sidebar-width) !important;
+    will-change: min-width;
+    transition-delay: 0.2s !important;
+}
+
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:hover>#sidebar {
+    min-width: var(--sidebar-hover-width) !important;
+    transition-delay: 0.2s !important;
+}
+
+#sidebar-box {
+    opacity: 0.98;
+
+}
+
+#sidebar-header,
+#sidebar-splitter {
+    display: none !important;
+}
+
+#sidebar-box #sidebar,
+#sidebar-box #webextpanels-window {
+    margin: -30px 15px -30px 5px !important;
+    transition: border 0.2s ease !important;
+
+}
+
+#main-window #appcontent browser {
+    border-radius: 6px !important;
+    margin: 5px 10px 8px 14px !important;
+    transition: border 0.3s ease;
+    clip-path: circle(80%) !important;
+}
+
+#back-button,
+#forward-button {
+    display: none !important;
+}
