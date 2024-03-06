@@ -14,11 +14,6 @@ tab.tabbrowser-tab * {
     border-bottom: var(--firefoxcss-top-bar-border-bottom-size) solid var(--firefoxcss-top-bar-border-bottom-color) !important;
 }
 
-/* hide bookmark button */
-/* #star-button-box {
-    display: none !important;
-} */
-
 #alltabs-button,
 #tabs-newtab-button {
     display: none !important;
