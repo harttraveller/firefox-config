@@ -1,6 +1,6 @@
 # firefox-config
 
-work in progress, may add setup info later later
+work in progress, may add setup info later
 
 ## using css from
 
