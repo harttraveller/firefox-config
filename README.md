@@ -12,3 +12,5 @@ work in progress, may add setup info later
 - ublock-origin
 - sidebery
 - vimium
+- memex
+- tampermonkey
